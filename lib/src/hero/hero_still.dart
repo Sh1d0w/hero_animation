@@ -119,7 +119,7 @@ class HeroStillRenderObject extends RenderProxyBox {
 
 extension RenderObjectExtension on RenderBox {
   RenderObject? findRenderObjectOfType<T>() {
-    RenderBox? node = this;
+    RenderObject? node = this;
 
     while (node != null) {
       if (node is RenderObject && node is T) {
